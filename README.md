@@ -1,2 +1,2 @@
 # javascript
-javascript教育
+非ブログラマ向けjavascript講習
