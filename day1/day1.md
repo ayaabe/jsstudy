@@ -54,6 +54,22 @@ kawaii('ももクロ'); //関数の戻り値 => ももクロは可愛い
 ```
 
 
+## コマンド
+
+```
+brew install npm  # npm(node のライブラリ管理ツール) インストール  node package manager => npm
+npm install # install libraries
+node app.js # run
+
+# with browser access to http://localhost:3000
+
+```
+
+
+
+
+
+
 ## 代入
 
 用意した箱に値を入れること。
@@ -106,6 +122,7 @@ HTMLと名前が似ているのはHTMLもXMLの一種だから
 ### Ajax
 Asyncchronous Javascript+XML
 URLを移動せずにサーバとのデータのやりとりを行うのでスムーズにレンダリングが行える
+
 
 
 
