@@ -1,10 +1,24 @@
 var express = require('express');
 var app = express();
 
-var server = app.listen(3000,function(){
-	console.log("app listening at :3000")
+var server = app.listen(3001,function(){
+	console.log("app listening at :3001")
 })
 
+function listen(port, fn){
+ var successOrFail =listenOn(port);
+ // success or fail
+ // i am ayaka -> iAmAyaka
+ // success_or_fail()
+ if (successOrFail){
+    fn()
+  }
+
+
+}
+
+var xx = function(){console.log("oppai ")}
+xx()
 
 app.get("/",function(req,res,next){
 
@@ -14,17 +28,15 @@ app.get("/",function(req,res,next){
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		</head>
 		<script>
-			$("h1").click(function(){
+			$("#abe").click(function(){
 					console.log("click!!!")
 			})
 		</script>
 		<body>
-			<h1>あべは可愛い</h1>
+			<h1 id="abe">あべは可愛い</h1>
 			<dt>概要</dt>
 			<dd>しかし、手首をサポートする任務はまったくはたせていない</dd>
 		</body>
 		</html>	`);
 
 })
-
-
